@@ -10,7 +10,7 @@ const records = [
     bgcolor: "RED",
     color: "#FFF",
     img: "TTAJ.png"
-  }
+  },
   {
     name: "Bookshelf",
     size: "large",
