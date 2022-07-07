@@ -3,3 +3,6 @@ node_modules
 .env
 out
 .DS_Store
+/test-results/
+/playwright-report/
+/playwright/.cache/

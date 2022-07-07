@@ -4,60 +4,100 @@ import styles from "../styles/Home.module.css";
 
 const records = [
   {
-    name: "The Big Board",
+    name: "NATALIE",
     size: "large",
     width: "8",
-    bgcolor: "#F9E559",
-    color: "#ACA14A"
+    bgcolor: "RED",
+    color: "#FFF",
+    img: "TTAJ.png"
   },
   {
     name: "Bookshelf",
     size: "large",
     width: "8",
     bgcolor: "#6CCECB",
-    color: "#598F8E"
+    color: "#598F8E",
+    img: "RD.png"
   },
   {
     name: "Another thing",
     size: "large",
     width: "8",
     bgcolor: "#8EDC9D",    
-    color: "#6E9970"
+    color: "#6E9970",
+    img: "NFFN.png"
   },
   {
     name: "Beating Bobby Fischer",
     size: "large",
     width: "16",
     bgcolor: "#EF7126",
-    color: "#9E5527"
+    color: "#9E5527",
+    img: "BS.png"
   },
   {
     name: "The Big Board",
     size: "large",
     width: "8",
     bgcolor: "#F9E559",
-    color: "#ACA14A"
+    color: "#ACA14A",
+    img: "HTBBF.png"
   },
   {
     name: "Bookshelf",
     size: "large",
     width: "8",
     bgcolor: "#6CCECB",
-    color: "#598F8E"
+    color: "#598F8E",
+    img: "BATE.png"
   },
   {
     name: "Another thing",
     size: "large",
     width: "8",
     bgcolor: "#8EDC9D",    
-    color: "#6E9970"
+    color: "#6E9970",
+    img: "42and21.png"
   },
   {
     name: "Beating Bobby Fischer",
     size: "large",
-    width: "16",
+    width: "8",
     bgcolor: "#EF7126",
-    color: "#9E5527"
+    color: "#9E5527",
+    img: "plebe11.png"
+  },
+  {
+    name: "Beating Bobby Fischer",
+    size: "large",
+    width: "8",
+    bgcolor: "#EF7126",
+    color: "#9E5527",
+    img: "plebe12.png"
+  },
+  {
+    name: "Beating Bobby Fischer",
+    size: "large",
+    width: "8",
+    bgcolor: "#EF7126",
+    color: "#9E5527",
+    img: "plebe13.png"
+  },
+  {
+    name: "Beating Bobby Fischer",
+    size: "large",
+    width: "8",
+    bgcolor: "#EF7126",
+    color: "#9E5527",
+    img: "nffn9.png"
+  },
+  {
+    name: "Beating Bobby Fischer",
+    size: "large",
+    width: "8",
+    bgcolor: "#EF7126",
+    color: "#9E5527",
+    img: "nffn10.png"
   }
 ];
 
@@ -77,11 +117,8 @@ export default function Home() {
         <div className="flex col flex-wrap">
         {records.map((record) => (
           
-          <div title={`${record.name}`} className={`w-${record.width} mr-1 mb-1 h-48 relative rounded-sm cursor-pointer`} style={{backgroundColor: record.bgcolor, color:record.color}}>
-              
-              
-              <div className="rotate-90 pl-0 origin-left w-48 whitespace-wrap absolute left-4">{record.name}</div>
-          </div>
+          <img src={record.img} className="mr-1" />
+          
         ))}
         </div>
         
