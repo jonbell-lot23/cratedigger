@@ -10,7 +10,7 @@ const records = [
     bgcolor: "RED",
     color: "#FFF",
     img: "TTAJ.png"
-  },
+  }
   {
     name: "Bookshelf",
     size: "large",
@@ -111,10 +111,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-gray-100 justify-center p-8 text-white rounded-xl m-12">
-        <h1 className="font-semibold mb-3 text-gray-600">Crate Digger</h1>
+      <div className="justify-center p-8 m-12 text-white bg-gray-100 rounded-xl">
+        <h1 className="mb-3 font-semibold text-gray-600">Crate Digger</h1>
         
-        <div className="flex col flex-wrap">
+        <div className="flex flex-wrap col">
         {records.map((record) => (
           
           <img src={record.img} className="mr-1" />
